@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>学生课程信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="jedate/jedate.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader-style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+	
+
+
+    <link rel="stylesheet" href="assets/css/mail.css">
+
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/minus.png">
+</head>
+
+<body><div id="awwwards" class="right black"><a href="student_course_Info.html" target="_blank">best websites of the world</a></div>
+    <!-- Preloader -->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+<!-- TOP NAVBAR -->
+<nav role="navigation" class="navbar navbar-static-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header"> <div id="logo-mobile" class="visible-xs">
+            <h1>学生首页</h1>
+        </div>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+            </ul>
+            <div id="nt-title-container" class="navbar-left running-text visible-lg">
+                <ul class="date-top">
+                    <li class="entypo-calendar" style="margin-right:5px"></li>
+                    <li id="Date"></li>
+                </ul>
+
+                <ul id="digital-clock" class="digital">
+                    <li class="entypo-clock" style="margin-right:5px"></li>
+                    <li class="hour"></li>
+                    <li>:</li>
+                    <li class="min"></li>
+                    <li>:</li>
+                    <li class="sec"></li>
+                    <li class="meridiem"></li>
+                </ul>
+                <ul id="nt-title">
+                    <li>&#160;&#160;2016&#160;
+                        &#160;秋季学期
+                    </li>
+                </ul>
+
+            </div>
+
+            <ul style="margin-right:0;" class="nav navbar-nav navbar-right">
+                <li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/10.jpg">Hi, Dave Mattew <b class="caret"></b>
+                    </a>
+                    <ul style="margin-top:14px;" role="menu" class="dropdown-setting dropdown-menu">
+
+                    </ul>
+                </li>
+                <li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="icon-gear"></span>&#160;&#160;Setting</a>
+                    <ul role="menu" class="dropdown-setting dropdown-menu">
+
+                        <li class="theme-bg">
+                            <div id="button-bg"></div>
+                            <div id="button-bg2"></div>
+                            <div id="button-bg3"></div>
+                            <div id="button-bg5"></div>
+                            <div id="button-bg6"></div>
+                            <div id="button-bg7"></div>
+                            <div id="button-bg8"></div>
+                            <div id="button-bg9"></div>
+                            <div id="button-bg10"></div>
+                            <div id="button-bg11"></div>
+                            <div id="button-bg12"></div>
+                            <div id="button-bg13"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hidden-xs">
+                    <a class="toggle-left" href="#">
+                        <span style="font-size:20px;" class="entypo-list-add"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+    <!-- SIDE MENU -->
+    <div id="skin-select">
+        <div id="logo">
+         <h1>课程详情</h1>
+        </div>
+
+        <a id="toggle">
+            <span class="entypo-menu"></span>
+        </a>
+        <div class="dark">
+            <form action="#">
+                <span>
+                    <input type="text" name="search" value="" class="search rounded id_search" placeholder="Search Menu..." autofocus="">
+                </span>
+            </form>
+        </div>
+
+        <div class="search-hover">
+            <form id="demo-2">
+                <input type="search" placeholder="Search Menu..." class="id_search">
+            </form>
+        </div>
+
+        <div class="skin-part">
+            <div id="tree-wrap">
+                <div class="side-bar">
+                    <ul class="topnav menu-left-nest">
+
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_course_info.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>课程详情</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_homework_list.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>作业</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_resourse_list.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>资源</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_message_board.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>留言板</span>
+
+                            </a>
+                        </li>
+                    </ul>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF SIDE MENU -->
+
+
+
+    <!--  PAPER WRAP -->
+    <div class="wrap-fluid">
+        <div class="container-fluid paper-wrap bevel tlbr">
+
+
+
+
+
+            <!-- CONTENT -->
+            <!--TITLE -->
+            <div class="row">
+                <div id="paper-top">
+                    <div class="col-sm-3">
+                        <h2 class="tittle-content-header">
+                            <i class="icon-user"></i> 
+                            <span>课程
+                            </span>
+                        </h2>
+
+                    </div>
+
+                    <div class="col-sm-7">
+                        <div class="devider-vertical visible-lg"></div>
+                        <div class="tittle-middle-header">
+
+                            <div class="alert">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <span class="tittle-alert entypo-info-circled"></span>
+                                Welcome back,&nbsp;
+                                <strong>Dave mattew!</strong>&nbsp;&nbsp;Your last sig in at Yesterday, 16:54 PM
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn btn-primary pull-right" type="submit">
+                                登 出
+                            </button>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--/ TITLE -->
+
+            <!-- BREADCRUMB -->
+
+
+            <!-- END OF BREADCRUMB -->
+
+
+
+            <div class="container">
+                <!--<table class="table-center">
+                  
+                   <tr>
+                   	<th class="col-lg-6">课程名字：</th>
+                   	<td class="col-lg-6-">软件工程过程</td>
+                   </tr>
+                   <tr>
+                   	<th class="col-lg-6">任课教师：</th>
+                   	<td class="col-lg-6-">林广艳</td>
+                   </tr>
+                   <tr>
+                   	<th class="col-lg-6">详细信息：</th>
+                   	<td class="col-lg-6-">1-16周  周三 上午10：00-12：00</td>
+                   </tr>
+                  	
+                  
+ 
+                    
+                </table>-->
+
+                <div class="modal-header">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+                                            <span class="entypo-cancel"></span>
+                                        </button>
+											<h6 id="myLargeModalLabel" class="modal-title">编辑作业</h6>
+										</div>
+										<div class="modal-body">
+
+											<div class="compose_mail">
+
+													<div class="form-group">
+
+														<input type="text" style="width: 300px" placeholder="作业名字" id="homeworkName" class="form-control">
+														
+													</div>
+													<div class="form-group">
+
+														<!--<input type="email" placeholder="截止日期" id="homeworkDate" class="form-control">-->
+														<!--
+                                                        	作者：zby
+                                                        	时间：2016-07-09
+                                                        	描述：新引入的组件
+                                                        -->
+														
+															<input class="datainp" id="datebut" type="email" placeholder="截止日期" readonly>
+															<input type="button" 
+																onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})" 
+																value="选择日期" id=" homeworkDate">
+														
+													</div>
+														<!--
+                                                        	作者：zby
+                                                        	时间：2016-07-09
+                                                        	描述：及其函数
+                                                        -->
+                                                        <script type="text/javascript">
+    													//jeDate.skin('gray');
+														jeDate({
+															dateCell:"#indate",//isinitVal:true,
+															format:"YYYY-MM",
+															isTime:false, //isClear:false,
+															minDate:"2015-10-19 00:00:00",
+															maxDate:"2016-11-8 00:00:00"
+														})
+    													jeDate({
+															dateCell:"#dateinfo",
+															format:"YYYY年MM月DD日 hh:mm:ss",
+															isinitVal:true,
+															isTime:true, //isClear:false,
+															minDate:"2014-09-19 00:00:00",
+															okfun:function(val){alert(val)}
+														})
+														</script>
+														
+													<div class="form-group">
+
+														<textarea placeholder="作业描述" id="homeworkInfo" class="form-control">作业描述 </textarea>
+													</div>
+
+												<div class="form">
+
+														<label for="fileToUpload"><h3>附件</h3></label>
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-lg-2">
+                                                                    <input type="file"    name="fileToUpload" id="fileToUpload" onchange="fileSelected();">
+                                                                </div>
+                                                                <div id="fileName"></div>
+                                                                <div id="fileSize"></div>
+                                                                <div id="fileType"></div>
+                                                                <div class="col-lg-3">
+                                                                    <!--<input type="submit" />-->
+                                                                    <input type="button" onclick="uploadFile()" value="上传"/>
+                                                                </div>
+                                                                <div id="progressNumber"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="help-block">Example block-level help text here.</p>
+
+
+
+														<button class="btn btn-info" type="submit" id="submit_homework">提交</button>
+
+												</div>
+											</div>
+
+										</div>
+
+
+            </div>
+
+            <!-- /END OF CONTENT -->
+
+
+
+            <!-- FOOTER -->
+
+    <!--  END OF PAPER WRAP -->
+
+    <!-- RIGHT SLIDER CONTENT -->
+    <!--<div class="sb-slidebar sb-right">-->
+
+
+
+    <!-- END OF RIGHT SLIDER CONTENT-->
+
+    <!-- MAIN EFFECT -->
+    <script type="text/javascript" src="assets/js/preloader.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/load.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+    var data;
+        function addHomework() {
+            //添加课程函数
+
+            var homeworkName = $("#homeworkName").val();
+            var courseType = $("#courseType").val();
+            var teacherId = $("#teacherId").val();
+            var teacherName = $("#teacherName").val();
+            var courseInfo = $("#courseInfo").val();
+            //alert("Test");
+            $.ajax({
+                type : "post",
+                url : "../admin/addCourseByTermId.action",
+                async : true,//异步
+                data : {
+                    termId : termId,
+                    courseName : courseName,
+                    courseType : courseType,
+                    teacherId : teacherId,
+                    teacherName : teacherName,
+                    courseInfo : courseInfo
+                },
+                success : function(data) {
+                    var course = data.data.course;
+                    CreateTable(course.courseId,
+                            course.courseName,
+                            course.courseType,
+                            course.term.termId,
+                            course.term.year,
+                            course.term.season,
+                            course.term.week,
+                            course.teacherName,
+                            course.courseInfo,
+                            course.teacher.teacherId
+                    );
+
+                },
+                error : function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert(XMLHttpRequest.status);
+                    alert(XMLHttpRequest.readyState);
+                    alert(textStatus);
+                }
+            });
+            //alert("test2")
+        }
+
+        $(document).ready(function() {
+            $("#submit_homework").click(function (){
+                $.ajax({
+                    type: "post",
+                    url: "../teacher/addHomework.action",
+                    async: true,//异步
+                    data: {
+                        homeworkName: $('#homeworkName').val(),
+                        homeworkContent: $('#homeworkInfo').val(),
+                        time: $('#datebut').val(),
+                        courseId:$.cookie("courseId"),
+                        resourceLocation: data.data.resourceLocation
+                    },
+                    success: function (data) {
+                        window.location.href= "teacher_homework_list.html";
+                    },
+                    error: function () {
+                        alert("出现异常!");
+                    }
+                });
+            });
+        });
+    </script>
+
+<script type="text/javascript">
+    function fileSelected() {
+        var file = document.getElementById('fileToUpload').files[0];
+        if (file) {
+            var fileSize = 0;
+            if (file.size > 1024 * 1024)
+                fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
+            else
+                fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+
+            document.getElementById('fileName').innerHTML = 'Name: ' + file.name;
+            document.getElementById('fileSize').innerHTML = 'Size: ' + fileSize;
+            document.getElementById('fileType').innerHTML = 'Type: ' + file.type;
+        }
+    }
+    function uploadFile() {
+        var fd = new FormData();
+        fd.append("file", document.getElementById('fileToUpload').files[0]);
+        fd.append("courseId",1);
+        alert(document.getElementById('fileToUpload').files[0].name);
+        fd.append("fileName",document.getElementById('fileToUpload').files[0].name);
+        var xhr = new XMLHttpRequest();
+        xhr.upload.addEventListener("progress", uploadProgress, false);
+        xhr.addEventListener("load", uploadComplete, false);
+        xhr.addEventListener("error", uploadFailed, false);
+        xhr.addEventListener("abort", uploadCanceled, false);
+        xhr.onreadystatechange = function()
+        {
+            if(xhr.readyState == 4)
+            {
+              	data = eval("(" + xhr.responseText + ")");
+              	alert(data.data.resourceLocation);
+            }
+       }
+        xhr.open("POST", "../file/uploadHomework.action");
+        xhr.send(fd);
+    }
+
+    
+    function uploadProgress(evt) {
+        if (evt.lengthComputable) {
+            var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+            document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+           // alert("22")
+        }
+        else {
+            document.getElementById('progressNumber').innerHTML = 'unable to compute';
+        }
+    }
+
+    function uploadComplete(data) {
+        /* This event is raised when ttahe server send back a response */
+        window.location = data.data.resourceLocation;
+        alert(location);
+        alert("11111111")
+    }
+
+    function uploadFailed(data) {
+        alert("There was an error attempting to upload the file.");
+    }
+
+    function uploadCanceled(data) {
+        alert("The upload has been canceled by the user or the browser dropped the connection.");
+    }
+</script>
+</body>
+
+</html>

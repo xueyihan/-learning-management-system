@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>教师作业列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Le styles -->
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/loader-style.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+		<link rel="stylesheet" href="assets/css/mail.css">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="assets/ico/minus.png">
+	</head>
+
+	<body>
+
+	<script type="text/javascript" src="assets/js/preloader.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/load.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/datepicker/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="assets/js/datepicker/bootstrap-datetimepicker.jspicker.js"></script>
+
+	<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+
+
+
+
+		<div id="awwwards" class="right black"><a href="teacher_homework_list.html" target="_blank">best websites of the world</a></div>
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status"></div>
+		</div>
+		<!-- TOP NAVBAR -->
+		<nav role="navigation" class="navbar navbar-static-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<div id="logo-mobile" class="visible-xs">
+						<h1>学生首页</h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+					</ul>
+					<div id="nt-title-container" class="navbar-left running-text visible-lg">
+						<ul class="date-top">
+							<li class="entypo-calendar" style="margin-right:5px"></li>
+							<li id="Date"></li>
+						</ul>
+
+						<ul id="digital-clock" class="digital">
+							<li class="entypo-clock" style="margin-right:5px"></li>
+							<li class="hour"></li>
+							<li>:</li>
+							<li class="min"></li>
+							<li>:</li>
+							<li class="sec"></li>
+							<li class="meridiem"></li>
+						</ul>
+						<ul id="nt-title">
+							<li>&#160;&#160;2016&#160; &#160;秋季学期
+							</li>
+						</ul>
+
+					</div>
+
+					<ul style="margin-right:0;" class="nav navbar-nav navbar-right">
+						<li>
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/10.jpg">Hi, Dave Mattew <b class="caret"></b>
+							</a>
+							<ul style="margin-top:14px;" role="menu" class="dropdown-setting dropdown-menu">
+
+							</ul>
+						</li>
+						<li>
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<span class="icon-gear"></span>&#160;&#160;Setting</a>
+							<ul role="menu" class="dropdown-setting dropdown-menu">
+
+								<li class="theme-bg">
+									<div id="button-bg"></div>
+									<div id="button-bg2"></div>
+									<div id="button-bg3"></div>
+									<div id="button-bg5"></div>
+									<div id="button-bg6"></div>
+									<div id="button-bg7"></div>
+									<div id="button-bg8"></div>
+									<div id="button-bg9"></div>
+									<div id="button-bg10"></div>
+									<div id="button-bg11"></div>
+									<div id="button-bg12"></div>
+									<div id="button-bg13"></div>
+								</li>
+							</ul>
+						</li>
+						<li class="hidden-xs">
+							<a class="toggle-left" href="#">
+								<span style="font-size:20px;" class="entypo-list-add"></span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!-- SIDE MENU -->
+		<div id="skin-select">
+			<div id="logo">
+				<h1>作业管理</h1>
+			</div>
+
+			<a id="toggle">
+				<span class="entypo-menu"></span>
+			</a>
+			<div class="dark">
+				<form action="#">
+					<span>
+                    <input type="text" name="search" value="" class="search rounded id_search" placeholder="Search Menu..." autofocus="">
+                </span>
+				</form>
+			</div>
+
+			<div class="search-hover">
+				<form id="demo-2">
+					<input type="search" placeholder="Search Menu..." class="id_search">
+				</form>
+			</div>
+
+			<div class="skin-part">
+				<div id="tree-wrap">
+					<div class="side-bar">
+						<ul class="topnav menu-left-nest">
+
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_course_info.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>课程详情</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_homework_list.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>作业</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_resourse_list.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>资源</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="teacher_message_board.html" title="Social">
+                                <i class="icon-feed"></i>
+                                <span>留言板</span>
+
+                            </a>
+                        </li>
+                    </ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END OF SIDE MENU -->
+
+		<!--  PAPER WRAP -->
+		<div class="wrap-fluid">
+			<div class="container-fluid paper-wrap bevel tlbr">
+
+				<!-- CONTENT -->
+				<!--TITLE -->
+				<div class="row">
+					<div id="paper-top">
+						<div class="col-sm-3">
+							<h2 class="tittle-content-header">
+                            <i class="icon-user"></i> 
+                            <span>作业
+                            </span>
+                        </h2>
+
+						</div>
+
+						<div class="col-sm-7">
+							<div class="devider-vertical visible-lg"></div>
+							<div class="tittle-middle-header">
+
+								<div class="alert">
+									<button type="button" class="close" data-dismiss="alert">×</button>
+									<span class="tittle-alert entypo-info-circled"></span> Welcome back,&nbsp;
+									<strong id="#usernameLabel"></strong>&nbsp;&nbsp;Your last sig in at Yesterday, 16:54 PM
+								</div>
+
+							</div>
+
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn btn-primary pull-right" type="submit" onclick="">
+                                登 出
+                            </button>
+
+						</div>
+					</div>
+				</div>
+				<!--/ TITLE -->
+
+				<!-- BREADCRUMB -->
+
+				<!-- END OF BREADCRUMB -->
+
+				<div class="content-wrap">
+					<div class="row">
+						<!-- SIDEMENU MAIL -->
+						<div class="col-sm-2">
+							<div class="side-mail">
+								<!--<div class="btn btn-info button-mail" data-toggle="modal" ><i class="entypo-pencil"></i>&nbsp;&nbsp;添加作业</a></div>-->
+								<button class="btn btn-info " type="button" onclick="jump()" ><i class="entypo-pencil"></i>&nbsp;&nbsp;添加作业</a></button>
+							</div>
+							<div aria-labelledby="myLargeModalLabel" role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg" style="display: none;" id="myModal">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+
+										<div class="modal-header">
+											<button aria-hidden="true" data-dismiss="modal" class="close" type="button">
+                                            <span class="entypo-cancel"></span>
+                                        </button>
+											<h6 id="myLargeModalLabel" class="modal-title">编辑作业</h6>
+										</div>
+										<div class="modal-body">
+
+											<div class="compose_mail">
+
+												<form role="form">
+													<div class="form-group">
+
+														<input type="text" placeholder="作业名字" id="homeworkName" class="form-control">
+													</div>
+													<div class="form-group">
+
+														<input  placeholder="截止日期"  value="$(\"#homeworkDate\" )"
+														        type="text"  dataformatas="yyyy-mm-dd hh:ii:ss"
+															    id="homeworkDate" class="input-lg"
+															   class="form-control" />
+
+														<input  placeholder="截止日期"
+																value="$(\"#homeworkDate\" )"  type="text"
+															   class="form-control"  id="homeworkDate1"
+															   data-date-format="yyyy-mm-dd hh:ii:ss" />
+
+													</div>
+													<div class="form-group">
+
+														<input type="text" placeholder="作业描述" id="homeworkInfo" class="form-control">
+													</div>
+													<!--<button class="btn" type="submit">确定</button>-->
+													<!--<button class="btn" type="submit">-->
+                                                    <!--<span class="fontawesome-save"></span>&nbsp;&nbsp;保存</button>-->
+												</form>
+												<div class="form">
+													<form role="form">
+
+														<label for="exampleInputFile"><h3>附件</h3></label>
+														<input type="file" id="exampleInputFile">
+														<p class="help-block">Example block-level help text here.</p>
+
+														<button class="btn btn-info" type="submit">提交</button>
+													</form>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+						<!-- /SIDEMENU MAIL -->
+						<!-- CONTENT MAIL -->
+						<div class="col-sm-10">
+							<div id="content-mail">
+								<div class="table-responsive">
+									<!-- THE MESSAGES -->
+									<table class="table table-mailbox" id="homework_Table">
+										<tr class="unread">
+											<th>时间</td>
+											<th><a>作业名</a></td>
+											<th>教师</td>
+										</tr>
+
+									</table>
+								</div>
+								<!-- /.table-responsive -->
+
+							</div>
+
+						</div>
+						<!-- /CONTENT MAIL -->
+					</div>
+				</div>
+
+				<!-- /END OF CONTENT -->
+
+				<!-- FOOTER -->
+				<div class="footer-space"></div>
+				<div id="footer">
+					<div class="devider-footer-left"></div>
+					<div class="time">
+						<p id="spanDate">
+							<p id="clock">
+					</div>
+					<div class="copyright">Make with Love
+						<span class="entypo-heart"></span>Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> All Rights Reserved</div>
+					<div class="devider-footer"></div>
+				</div>
+				<!-- / END OF FOOTER -->
+
+			</div>
+		</div>
+		<!--  END OF PAPER WRAP -->
+
+		<!-- RIGHT SLIDER CONTENT -->
+		<!--<div class="sb-slidebar sb-right">-->
+		</div>
+
+		<!-- END OF RIGHT SLIDER CONTENT-->
+
+		<!-- MAIN EFFECT -->
+
+
+
+		<script type="text/javascript">
+
+			$(function()//页面加载时读入课程信息
+			{
+
+				$("#usernameLabel").text("Hi! " + $.cookie("username"));
+				var courseId = $.cookie("courseId");
+				$.ajax({
+					type : "post",
+					url : "../student/getHomeworksByCourseId.action",
+					async : true,//异步
+					data : {
+						courseId : courseId,
+					},
+					success : function(data) {
+						console.log(data.data.courses);
+						//$("#classTable").prepend("Some prepended text.");
+						var homeworks = data.data.homeworks;
+						for(var i = 0;i < homeworks.length;i++){
+							var str =homeworks[i].deadline;
+							str = str.replace(/T\s*/,':');
+							CreateTable(
+									str,
+									homeworks[i].homeworkName,
+									homeworks[i].course.teacherName,
+									homeworks[i].homeworkId
+							);
+						}
+
+					},
+					error : function(XMLHttpRequest, textStatus, errorThrown) {
+						alert(XMLHttpRequest.status);
+						alert(XMLHttpRequest.readyState);
+						alert(textStatus);
+					}
+				});
+
+			});
+			function CreateTable(homeworkDate,homeworkName,homeworkTeacher,homeworkId)//循环创建课程详细信息表
+			{
+				
+				var table=$("#homework_Table");
+				var tr=$("<tr></tr>");
+				tr.appendTo(table);
+				var td=$("<td>"+homeworkDate+"</td>");
+				td.appendTo(tr);
+				
+				var td=$('<td><a onclick="homeworkInfo('+homeworkId+')">'+homeworkName+'</a></td>');
+				td.appendTo(tr);
+				var td=$("<td>"+homeworkTeacher+"</td>");td.appendTo(tr);
+
+				//var td=$("<td><a onclick=\"checkTermCourses(" + termId + ")\">查看</a></td>");
+				td.appendTo(tr);
+				tr.appendTo(table);
+
+			}
+			$("#logoutButton").click(function(){
+				alert("Test");
+				$.ajax({
+					type:"post",
+					url:"../user/logout.action",
+					async:true,//异步
+					data:{
+					},
+					success:function(data){
+						window.location.href = "login.html";
+						$.cookie("username", "", { expires: -1 });//删除一个cookie
+					},
+					error:function(){
+						alert("出现异常!");
+					}});
+			});
+//			function sendCourseId(courseId)//将courseId传到session，并跳转
+//			{
+//				var id=courseId;
+//				$.cookie("courseId",courseId);
+//				window.location.href = "StudentList.html";
+//			}
+			function jump()
+			{
+				window.location = "teacher_addhomework.html";
+			}
+
+			function homeworkInfo(homeworkId)
+			{
+				$.cookie("homeworkId",homeworkId);
+				window.location = "teacher_homework_info.html";
+			}
+
+		</script>
+
+	</body>
+<script type="text/javascript">
+</script>
+</html>

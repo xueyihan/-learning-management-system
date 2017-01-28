@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>留言板</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+<link rel="stylesheet" href="assets/css/loader-style.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<!--
+        	作者：zby
+        	时间：2016-07-10
+        	描述：下面这个style-board.css是留言板模板自带的css，应用区域不能是screen
+        -->
+<link rel="stylesheet" href="assets/css/style-board.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/mail.css">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+
+    <![endif]-->
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="assets/ico/minus.png">
+</head>
+
+<body>
+	<script type="text/javascript" src="assets/js/preloader.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/load.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+	<div id="awwwards" class="right black">
+		<a href="student_course_Info.html" target="_blank">best websites
+			of the world</a>
+	</div>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	<!-- TOP NAVBAR -->
+	<nav role="navigation" class="navbar navbar-static-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<div id="logo-mobile" class="visible-xs">
+					<h1>学生首页</h1>
+				</div>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="bs-example-navbar-collapse-1"
+				class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+				</ul>
+				<div id="nt-title-container"
+					class="navbar-left running-text visible-lg">
+					<ul class="date-top">
+						<li class="entypo-calendar" style="margin-right:5px"></li>
+						<li id="Date"></li>
+					</ul>
+
+					<ul id="digital-clock" class="digital">
+						<li class="entypo-clock" style="margin-right:5px"></li>
+						<li class="hour"></li>
+						<li>:</li>
+						<li class="min"></li>
+						<li>:</li>
+						<li class="sec"></li>
+						<li class="meridiem"></li>
+					</ul>
+					<ul id="nt-title">
+						<li>&#160;&#160;2016&#160; &#160;秋季学期</li>
+					</ul>
+
+				</div>
+
+				<ul style="margin-right:0;" class="nav navbar-nav navbar-right">
+					<li><a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<img alt="" class="admin-pic img-circle"
+							src="http://api.randomuser.me/portraits/thumb/men/10.jpg"><b
+							id="usernameLabel"></b><b class="caret"></b>
+					</a>
+						<ul style="margin-top:14px;" role="menu"
+							class="dropdown-setting dropdown-menu">
+
+						</ul></li>
+					<li><a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span class="icon-gear"></span>&#160;&#160;Setting
+					</a>
+						<ul role="menu" class="dropdown-setting dropdown-menu">
+
+							<li class="theme-bg">
+								<div id="button-bg"></div>
+								<div id="button-bg2"></div>
+								<div id="button-bg3"></div>
+								<div id="button-bg5"></div>
+								<div id="button-bg6"></div>
+								<div id="button-bg7"></div>
+								<div id="button-bg8"></div>
+								<div id="button-bg9"></div>
+								<div id="button-bg10"></div>
+								<div id="button-bg11"></div>
+								<div id="button-bg12"></div>
+								<div id="button-bg13"></div>
+							</li>
+						</ul></li>
+					<li class="hidden-xs"><a class="toggle-left" href="#"> <span
+							style="font-size:20px;" class="entypo-list-add"></span>
+					</a></li>
+				</ul>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<!-- SIDE MENU -->
+	<div id="skin-select">
+		<div id="logo">
+			<h1>课程详情</h1>
+		</div>
+
+		<a id="toggle"> <span class="entypo-menu"></span>
+		</a>
+		<div class="dark">
+			<form action="#">
+				<span> <input type="text" name="search" value=""
+					class="search rounded id_search" placeholder="Search Menu..."
+					autofocus="">
+				</span>
+			</form>
+		</div>
+
+		<div class="search-hover">
+			<form id="demo-2">
+				<input type="search" placeholder="Search Menu..." class="id_search">
+			</form>
+		</div>
+
+		<div class="skin-part">
+			<div id="tree-wrap">
+				<div class="side-bar">
+					<ul class="topnav menu-left-nest">
+
+							<li>
+								<a class="tooltip-tip ajax-load" href="student_course_info.html" title="Social">
+									<i class="icon-feed"></i>
+									<span>课程详情</span>
+
+								</a>
+							</li>
+							<li>
+								<a class="tooltip-tip ajax-load" href="student_homework_list.html" title="Social">
+									<i class="icon-feed"></i>
+									<span>作业</span>
+
+								</a>
+							</li>
+							<li>
+								<a class="tooltip-tip ajax-load" href="student_resourse_list.html" title="Social">
+									<i class="icon-feed"></i>
+									<span>资源</span>
+
+								</a>
+							</li>
+							<li>
+								<a class="tooltip-tip ajax-load" href="student_message_board.html" title="Social">
+									<i class="icon-feed"></i>
+									<span>留言板</span>
+
+								</a>
+							</li>
+						</ul>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END OF SIDE MENU -->
+
+	<!--  PAPER WRAP -->
+	<div class="wrap-fluid">
+		<div class="container-fluid paper-wrap bevel tlbr">
+
+			<!-- CONTENT -->
+			<!--TITLE -->
+			<div class="row">
+				<div id="paper-top">
+					<div class="col-sm-3">
+						<h2 class="tittle-content-header">
+							<i class="icon-user"></i> <span>课程 </span>
+						</h2>
+
+					</div>
+
+					<div class="col-sm-7">
+						<div class="devider-vertical visible-lg"></div>
+						<div class="tittle-middle-header">
+
+							<div class="alert">
+								<button type="button" class="close" data-dismiss="alert">×</button>
+								<span class="tittle-alert entypo-info-circled"></span> Welcome
+								back,&nbsp; <strong id="usernameLabel1">Dave mattew!</strong>&nbsp;&nbsp;Your
+								last sig in at Yesterday, 16:54 PM
+							</div>
+
+						</div>
+
+					</div>
+					<div class="col-sm-2">
+						<button class="btn btn btn-primary pull-right" type="submit">
+							登 出</button>
+
+					</div>
+				</div>
+			</div>
+			<!--/ TITLE -->
+
+			<!-- BREADCRUMB -->
+
+			<!-- END OF BREADCRUMB -->
+
+			<!--form lisa-->
+			<div class="container">
+				<div id="convo" data-from="Sonu Joshi">
+					<ul id="chat" class="chat-thread" style="width: 500px;">
+
+					</ul>
+				</div>
+				<!--<div class="container">-->
+				<!--<form>-->
+
+				<!--<textarea style="width: 80%; height: 30px" id="textarea" placeholder="留言"></textarea>-->
+				<!--<br>-->
+				<!--<button class="btn btn-default" value="发送"></button>-->
+				<!--</form>-->
+				<!--</div>-->
+			</div>
+
+			<br />
+			<div class="container">
+				<div class="col-md-4"></div>
+				<div class="col-md-6">
+					<form>
+						<textarea class="compose_mail"
+							style="width: 340px; height: 60px; resize: none;" id="text"
+							placeholder="留言"></textarea>
+						<br />
+						<button type="button" class="btn btn-default" id="send">发送</button>
+					</form>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<!--end of lisa-->
+			<!-- /END OF CONTENT -->
+
+			<!-- FOOTER -->
+			<div class="footer-space"></div>
+			<div id="footer">
+				<div class="devider-footer-left"></div>
+				<div class="time">
+					<p id="spanDate">
+					<p id="clock">
+				</div>
+				<div class="copyright">
+					Make with Love <span class="entypo-heart"></span>Collect from <a
+						href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+					All Rights Reserved
+				</div>
+				<div class="devider-footer"></div>
+			</div>
+			<!-- / END OF FOOTER -->
+
+		</div>
+	</div>
+	<!--  END OF PAPER WRAP -->
+
+
+	<script type="text/javascript">
+		var courseId = $.cookie("courseId");
+		var studentId = $.cookie("username");
+		$(document)
+				.ready(
+						function() {
+							$("#usernameLabel1").text("Hi! " + studentId);
+							$.ajax({
+										type : "post",
+										url : "../messageBoard/getAllMessageBoardsByCourseId.action",
+										async : true, //异步
+
+										data : {
+											//courseId: $.cookie("courseId",courseId)
+											courseId : courseId
+										},
+
+										success : function(data) {
+											var messageBoards = data.data.messageBoards;
+											for (var i =messageBoards.length - 1; i < messageBoards.length; i--) {
+												CreateList(
+														messageBoards[i].identity,
+														messageBoards[i].username,
+														messageBoards[i].content,
+														messageBoards[i].time);
+											}
+										},
+										error : function() {
+											alert("出现异常!");
+										}
+									});
+
+						});
+		function CreateList(identity, username, content, time)//循环创建课程详细信息表
+		{
+			var list = $("#chat");
+			if (identity == 1) {
+				var li = $("<li><font color=\"#FF0000\">(教师&nbsp;</font><font color=\"##0000FF\">"
+						+ username
+						+ "&nbsp;"
+						+ time
+						+ "):</font><font color=\"#000000\">"
+						+ content
+						+ "</font>");
+			} 
+			else
+			{
+				var li = $("<li><font color=\"#FF0000\">(学生&nbsp;</font><font color=\"##0000FF\">"
+						+ username
+						+ "&nbsp;"
+						+ time
+						+ "):</font><font color=\"#000000\">"
+						+ content
+						+ "</font>");
+			}
+			li.appendTo(list);
+		}
+		$("#send").click(function() {
+			alert("Test")
+			var courseId = $.cookie("courseId");
+			var teacherId = $.cookie("username");
+			var content = $("#text").val();
+			$.ajax({
+				type : "post",
+				url : "../messageBoard/addMessage.action",
+				async : true,//异步
+				data : {
+					identity : 0,
+					username : teacherId,
+					content : content,
+					courseId : courseId
+
+				},
+				success : function(data) {
+					var messageBoard = data.data.messageBoard;
+					CreateList(messageBoard.identity,messageBoard.username,messageBoard.content,messageBoard.time);
+				},
+				error : function() {
+					alert("出现异常!");
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

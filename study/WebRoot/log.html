@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+			<link rel="stylesheet" href="css/bootstrap.min.css" />
+			<script type="text/javascript" src="js/jquery-3.0.0.min.js" ></script>
+			<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		   
+	</head>
+	<body style="background-image:url(img/beihang.jpg);background-size: cover;background-repeat:repeat-y">
+		<div class="container">
+			<h1 class="page-header">欢迎登陆教务系统</h1>
+			   <nav class="nav navbar-collapse "  role= "navigation">
+			       <div class="container-fluid">
+						<div class="navbar-header">
+							<!--<button class="navbar-toggle" data-toggle="collapse " data-target =".navbar-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>-->
+						</div>
+						 <!--<div class="collapse navbar-collapse">-->
+						  <ul class="nav navbar-nav navbar-right">
+							<li id="1" ><a href="#"><font color="#F7ECB5">教务</font></a></li>
+							<li id="2"> <a href="#" ><font color="#F7ECB5">教师</font></a></li>
+							<li id="3" class="active"><a href="#"><font color="#F7ECB5">学生</font></a></li>
+						  </ul>
+						 <!--</div>-->
+			       </div>
+			   </nav>
+			   
+			 <div class="container" align="right"> 
+			        <div class="form-group" >
+				   
+				        	<div class="col-lg-offset-8" >
+					        
+					        <input id="username" type="text" class="form-control " placeholder="用户名/邮箱" />
+					     
+				        </div>
+			        </div>
+			        <div class="form-group">
+				        <div class="col-lg-offset-8">
+					        <input id="password" type="password" class="form-control" placeholder="密码"/>
+				        </div>
+			        </div>
+	            <button class="btn btn-primary right" id="btn_submit" onclick="an()">登陆</button>
+	            <!--<button class="btn btn-primary" onclick="">注册</button>-->
+	          </div>   	
+	            </div>
+		</div>
+		
+	</body>
+<script> 
+$(function(){
+	$("#btn_submit").click(function(){
+		$.ajax({
+			type:"post",
+			url:"user/login.action",
+			async:true,//异步
+			data:{
+				username:$('#username').val(),
+				password:$('#password').val()
+			},
+			success:function(data){
+				if(data.data.result == "success")
+				{
+					alert("登录成功");
+					window.location.href = "EA_term_manage.html";
+				}
+				else
+				{
+					alert("错误")
+				}
+			},
+			error:function(){
+				  alert("出现异常!");
+			}
+		});
+	});
+	})
+</script>
+</html>

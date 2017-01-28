@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <constant name="struts.action.extension" value="action,do,zip" /> 
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<package name="mypackage" extends="json-default">  
+		<interceptors>
+			<interceptor name="loginInterceptor" class="com.example.study.filters.LoginFilterInterceptor">
+			</interceptor>
+			<interceptor-stack name="boloStack">
+				<interceptor-ref name="loginInterceptor">
+				    <param name="excludeMethods">login</param>
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<default-interceptor-ref name="boloStack"></default-interceptor-ref>
+		
+		<global-results>
+			<result name="login">/front/登录.html</result>
+		</global-results> 
+	</package>
+</struts>    

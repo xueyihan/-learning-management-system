@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>教务学期管理页面</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</head>
+	<body style="background-image:url(img/beihang.jpg);background-repeat:no-repeat;background-attachment:fixed;background-size:cover">
+		<nav class="nav navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header navbar-left">
+					<ul class="nav navbar-nav" style="height: 50px;margin-top:-10px;">
+					<h2>教务学期管理页面</h2>
+				</div>
+				<div class="navbar-header navbar-right">
+					<ul class="nav navbar-nav" style="height: 50px;margin-top:10px;">
+					<button class="btn btn-primary">登出系统</button>
+				</div>
+			</div>
+		</nav>
+		<!--
+        	作者：zby
+        	时间：2016-07-04
+        	描述：导航栏
+        -->
+		<div class="container-fluid" style="height: 300px;">
+			<h3 align="middle">以往学期</h3>
+			<table>
+				<div class="container" style="background-color:#FCF8E3">
+				<div class="row">
+					<div class="col-md-3" align="middle">学期id</div>
+					<div class="col-md-3" align="middle">年份</div>
+					<div class="col-md-3" align="middle">季节</div>
+					<div class="col-md-3" align="middle">周次</div>
+				</div>
+				</div>
+			</table>
+		</div>
+		
+		<div class="container-fluid" style="background-color: #843534;">
+			<h3 style="font-style: ;" align="middle">添加新学期</h3>
+			<div class="row">
+				<div class="col-md-6" align="right">
+					<span style="color: #FFFF00;">学期id</span>
+				</div>
+				<div class="col-md-6" align="left">
+					<input type="text" placeholder="如01" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6" align="right">
+					<span style="color: #FFFF00;">年份</span>
+				</div>
+				<div class="col-md-6" align="left">
+					<input type="text" placeholder="如2015~16年" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6" align="right">
+					<span style="color: #FFFF00;">季节</span> 
+				</div>
+				<div class="col-md-6" align="left">
+					<input type="text" placeholder="如秋季" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6" align="right">
+					<span style="color: #FFFF00;">周数</span> 
+				</div>
+				<div class="col-md-6" align="left">
+					<input type="text" placeholder="如16周" />
+				</div>
+			</div>
+			
+			<div align="middle">
+				<button class="btn btn-primary">建立新学期并开始设置课程</button>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
